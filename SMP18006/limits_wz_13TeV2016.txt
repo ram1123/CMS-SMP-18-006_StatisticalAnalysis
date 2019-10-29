@@ -1,0 +1,60 @@
+imax 1 number of channels
+jmax 4 number of background
+kmax * number of nuisance parameters
+shapes * * ch1_splitted_TF1_WV.root $PROCESS $PROCESS_$SYSTEMATIC
+shapes W1+jets * ch1_splitted_TF1_WV.root $PROCESS $SYSTEMATIC
+shapes data_obs * ch1_splitted_TF1_WV.root data_obs
+shapes Higgs * ch1_splitted_TF1_WV.root CH_WZToLNu_M$MASS CH_WZToLNu_M$MASS_$SYSTEMATIC
+Observation -1
+
+bin wz13TeV2016 wz13TeV2016 wz13TeV2016 wz13TeV2016 wz13TeV2016
+process Higgs top VVjjQCD diboson W1+jets 
+process 0 1 2 3 4 
+rate -1.00000 -1.00000  -1.00000  -1.00000  -1.00000  
+lumi_13TeV         lnN  1.025      				1.025				1.025				1.025				-
+CMS_eff_m         lnN  1.01      				1.01				1.01				1.01				-
+CMS_eff_e         lnN  1.01      				1.01				1.01				1.01				-
+CMS_eff_trigger   lnN  1.02      				1.02				1.02				1.02				-
+CMS_eff_b_mistag         lnN  0.98      				0.98				0.97				0.98				-
+norm_Wjet         lnN  -      				-				-				-				1.07
+norm_top         lnN  -      				1.05				-				-				-
+CMS_norm_PU         lnN  1.04      				1.04				1.04				-				-
+CMS_norm_met         lnN  1.02      				1.02				1.03				1.02				-
+CMS_eff_vtag_tau21_sf         lnN  1.08      				1.08				1.08				1.08				-
+top_bbb_top_bin_1 shape1  -				1.0 				-				-				-
+top_bbb_top_bin_2 shape1  -				1.0 				-				-				-
+top_bbb_top_bin_3 shape1  -				1.0 				-				-				-
+top_bbb_top_bin_4 shape1  -				1.0 				-				-				-
+top_bbb_top_bin_5 shape1  -				1.0 				-				-				-
+top_bbb_top_bin_6 shape1  -				1.0 				-				-				-
+top_bbb_top_bin_7 shape1  -				1.0 				-				-				-
+top_bbb_top_bin_8 shape1  -				1.0 				-				-				-
+VVjjQCD_bbb_VVjjQCD_bin_1 shape1  -				-				1.0 				-				-
+VVjjQCD_bbb_VVjjQCD_bin_2 shape1  -				-				1.0 				-				-
+VVjjQCD_bbb_VVjjQCD_bin_3 shape1  -				-				1.0 				-				-
+VVjjQCD_bbb_VVjjQCD_bin_4 shape1  -				-				1.0 				-				-
+VVjjQCD_bbb_VVjjQCD_bin_5 shape1  -				-				1.0 				-				-
+VVjjQCD_bbb_VVjjQCD_bin_6 shape1  -				-				1.0 				-				-
+VVjjQCD_bbb_VVjjQCD_bin_7 shape1  -				-				1.0 				-				-
+VVjjQCD_bbb_VVjjQCD_bin_8 shape1  -				-				1.0 				-				-
+VVjjQCD_QCDScale shape1  -				-				1.0 				-				-
+pdf_ggbar shape1  -				-				1.0 				-				-
+diboson_bbb_diboson_bin_1 shape1  -				-				-				1.0 				-
+diboson_bbb_diboson_bin_2 shape1  -				-				-				1.0 				-
+diboson_bbb_diboson_bin_3 shape1  -				-				-				1.0 				-
+diboson_bbb_diboson_bin_4 shape1  -				-				-				1.0 				-
+diboson_bbb_diboson_bin_5 shape1  -				-				-				1.0 				-
+diboson_bbb_diboson_bin_6 shape1  -				-				-				1.0 				-
+diboson_bbb_diboson_bin_7 shape1  -				-				-				1.0 				-
+diboson_bbb_diboson_bin_8 shape1  -				-				-				1.0 				-
+shape_W+jets shape1  -				-				-				-				1.0 
+shape2_W+jets shape1  -				-				-				-				1.0 
+shape3_W+jets shape1  -				-				-				-				1.0 
+shape4_W+jets shape1  -				-				-				-				1.0 
+shape5_W+jets shape1  -				-				-				-				1.0 
+CMS_scale_j        shape1  1.0          				1.0				1.0				1.0				-
+CMS_scale_l        shape1  1.0          				1.0				1.0				1.0				-
+diboson_QCDScale        shape1  -          				-				-				1.0				-
+Higgs_QCDScale        shape1  1.0         				-				-				-				-
+pdf_qqbar        shape1      1.0          				-				-				1.0				-
+signal_ewk         lnN  1.07      				-				-				-				-
